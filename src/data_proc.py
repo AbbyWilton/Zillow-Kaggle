@@ -15,6 +15,7 @@ def load_training_data(file_name):
 def load_properties_data(file_name):
 
     # Helper function for parsing the flag attributes
+    # 
     def convert_true_to_float(df, col):
         df.loc[df[col] == 'true', col] = '1'
         df.loc[df[col] == 'Y', col] = '1'
